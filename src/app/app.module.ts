@@ -10,6 +10,7 @@ import { ServicesComponent } from './services/services.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { TransactionsComponent } from './transactions/transactions.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { ShortenAddressPipe } from './utils/shortenAddress.pipe';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     LoaderComponent,
     ServicesComponent,
     WelcomeComponent,
-    TransactionsComponent
+    TransactionsComponent,
+    ShortenAddressPipe
   ],
   imports: [
     BrowserModule,

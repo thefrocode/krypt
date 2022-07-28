@@ -1,1 +1,66 @@
-<p>welcome works!</p>
+<div class="flex w-full justify-center items-center">
+    <div class="flex md:flex-row flex-col items-start justify-between md:p-20 py-12 px-4">
+        <div class="flex flex-1 justify-start items-start flex-col md:mr-10">
+            <h1 class="text-3xl sm:text-5xl text-white text-gradient py-1">Send Crypro <br /> across the world</h1>
+            <p class="text-left mt-5 text-white font-light md:w-9/12 w-11/12 text-base">
+                Explore the crypto world. Buy and sell cryptocurrencies easily on Krypto.
+            </p>
+            <button class="flex flex-row justify-center w-full 
+              items-center my-5 bg-[#2952e3] p-3 rounded-full cursor-pointer 
+              hover:bg-[#2546bd]" type="button" (click)="connectWallet()">
+                <p class="text-white text-base font-semibold">
+                    Connect Wallet </p>
+            </button>
+            <div class="grid sm:grid-cols-3 grid-cols-2 w-full mt-10">
+                <div class="rounded-tl-2xl commonStyles">Reliability</div>
+                <div class=" commonStyles">Security</div>
+                <div class="rounded-tr-2xl commonStyles">Etheruem</div>
+                <div class="rounded-bl-2xl commonStyles">Web 3.0</div>
+                <div class=" commonStyles">Low Fees</div>
+                <div class="rounded-br-2xl commonStyles">Blockchain</div>
+            </div>
+
+        </div>
+        <div class="flex flex-col flex-1 items-center justify-start w-full md:mt-0 mt-10">
+            <div
+                class="p-3 flex justify-end items-start flex-col rounded-xl h-40 sm:w-72 w-full my-5 eth-card white-glassmorphism ">
+                <div class="flex justify-between flex-col w-full h-full">
+                    <div class="flex justify-between items-start">
+                        <div class="w-10 h-10 rounded-full border-2 border-white flex justify-center items-center">
+                            <fa-icon [icon]="ethereum" [styles]="{'color': '#fff', 'font-size': '21' }">
+
+                            </fa-icon>
+                        </div>
+                        <fa-icon [icon]="info" [styles]="{'color': '#fff', 'font-size': '21' }">
+
+                        </fa-icon>
+                    </div>
+                    <div>
+                        <p class="text-white font-light text-sm">
+                            x0.hjnnvhjk
+                        </p>
+                        <p class="text-white font-semibold text-lg mt-1">
+                            Ethereum
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="p-5 sm:w-96 w-full flex flex-col justify-start items-center blue-glassmorphism">
+                <input class="inputStyle" placeholder="Address To" name="addressTo" type="text" />
+                <input class="inputStyle" placeholder="Amount (ETH)" name="amount" type="number" step="0.0001"/>
+                <input class="inputStyle" placeholder="Keyword (Gif)" name="keyword" type="text"/>
+                <input class="inputStyle" placeholder="Enter Message" name="message" type="text"/>
+
+                <div class="h-[1px] w-full bg-gray-400 my-2" ></div>
+
+                
+                <button type="button"
+                    class="text-white w-full mt-2 border-[1px] p-2 border-[#3d4f7c] hover:bg-[#3d4f7c] rounded-full cursor-pointer">
+                    Send now
+                </button>
+                
+            </div>
+        </div>
+    </div>
+
+</div>
